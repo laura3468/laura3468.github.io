@@ -1,0 +1,194 @@
+html, body { 
+    margin:0;
+    padding:0;
+    font-size: 18px; 
+    line-height: 1.4rem;
+    font-family: "Libre Franklin", "Lucida Sans Unicode";
+    background-color: #fff;
+} 
+header {
+   position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: #F6F6F6;
+    box-shadow: 0px 4px 5px #ccc;
+    min-height: 150px;
+    max-height: 150px;
+}
+:target:before {
+content:"";
+display:block;
+height:150px; /* fixed header height*/
+margin:-150px 0 0; /* negative fixed header height */
+}
+header p {
+    text-align:center;
+    margin: -.5rem 0 .5rem 0;
+    padding:0;
+    font-variant: small-caps;
+    white-space: nowrap;
+}
+nav h2 { /*hidden from page*/
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important; 
+    width: 1px !important; 
+    overflow: hidden;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    list-style-type: none;
+}
+nav li {
+    display:inline;
+}
+nav li a {
+    display: inline-block;
+    color: #D05951;
+    padding:.1rem .7rem .5rem .7rem;
+    font-size:.9rem;
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: .05rem;
+    transition:all 0.3s;
+}
+nav li a:hover {
+    color: #468499;
+    transform: scale(1.1);
+
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+main {
+    padding:.8rem ;
+    padding-top: 150px;/* bc/fixed header*/
+    min-width: 0;
+    max-width: 35rem;
+    margin: auto;
+}
+ul.times{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.times li {
+    display:inline;
+    font-size: .65rem;
+    white-space: nowrap;
+}
+.timeslabel {
+    font-weight: bold;
+}
+h1 {
+    font-family: "Brush Script MT";
+    font-size: 2.5rem;
+    color: #F6F6F6;
+    background-color:#468499;
+    margin: 0;
+    margin-bottom:1.4rem;
+    padding:1rem;
+    text-align:center;
+    letter-spacing: .1rem;
+    white-space: nowrap;
+    text-shadow:1px 1px 2px #111;
+}
+h2 {
+    margin-top:2rem;
+    color:#468499;
+    border-bottom: .1rem solid #468499;
+}
+h3 {
+    color: #088da5;
+}
+figure {
+    max-width:20rem;
+    margin: 0;
+    background-color:#FCFCFC;
+    padding:1rem;
+    padding-bottom: .3rem;
+    border: .1rem solid #468499;
+    box-shadow: 5px 5px 4px #ccc;
+    margin-bottom: 1.7rem;
+    margin-top:1.7rem;
+    transition:all 0.5s;
+}
+figure:hover {
+       box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+    transform: scale(1.1,1.1); 
+}
+figure img {
+    width:100%;
+    border: .1rem solid #468499;
+}
+
+
+figcaption {
+    text-align: center;
+    font-size:.8rem;
+    font-weight: bold;
+
+}
+figcaption {
+
+}
+
+section ul, section ol {
+    color:#468499;
+    padding-left: 1rem;
+}
+
+section ul {
+    padding-left: .3rem;
+}
+section ol li {
+    margin-bottom:1rem;
+}
+section ul li {
+    margin-bottom:.5rem;
+    list-style-type: none;
+}
+section ul li input.checkIngred {
+
+}
+section li p{
+    color:black;
+    margin:0;
+}
+aside {
+position: fixed;
+top: 3px;
+left: 3px;
+}
+footer {
+    line-height: .8rem;
+    border-top: 1px solid #dfdfd
+    f;
+    padding: 1rem;
+    text-align:center;
+    font-size: .8rem;
+    background-color: #efefef;
+
+}
